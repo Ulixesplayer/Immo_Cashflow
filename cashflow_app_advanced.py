@@ -20,7 +20,7 @@ steuersatz = st.sidebar.slider("Steuersatz (%)", 0.0, 50.0, 42.0) / 100
 ek_quote = st.sidebar.selectbox("Eigenkapitalquote", [0.0, 0.05, 0.10, 0.20])
 zins_min = st.sidebar.slider("Zins min (%)", 2.0, 5.0, 2.0)
 zins_max = st.sidebar.slider("Zins max (%)", 2.0, 5.0, 5.0)
-  miete_min = st.sidebar.slider("Miete min (€)", 3000, 6000, 3000)
+miete_min = st.sidebar.slider("Miete min (€)", 3000, 6000, 3000)
 miete_max = st.sidebar.slider("Miete max (€)", 3000, 6000, 5000)
 
 zinse = np.arange(zins_min, zins_max + 0.001, 0.05) / 100
