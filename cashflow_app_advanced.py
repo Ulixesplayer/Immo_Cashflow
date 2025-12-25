@@ -84,8 +84,6 @@ fig_anim = go.Figure(data=go.Heatmap(
     colorscale='RdYlGn',
     zmin=-2500, zmax=2500
 ))
-fig_anim.update_layout(title=f"Cashflow nach {jahre} Jahren",
-                       xaxis_title="Zinssatz (%)",
-                       yaxis_title="Monatliche Nettomiete (€)")
+fig_anim.update_layout(title=f"Cashflow nach {jahre} Jahren",                  xaxis_title="Zinssatz (%)",                     yaxis_title="Monatliche Nettomiete (€)")
+
 st.plotly_chart(fig_anim)
- 
